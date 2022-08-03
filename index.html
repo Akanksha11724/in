@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+   <script src="bas.js"></script>
+    <nav>
+        <a style="color:white; font-size: 40px; float: left;">Notes</a><br><br>
+        <a style="margin-left: 800px;">Home</a>
+        <a>About Us</a>
+        <a>Collections</a>
+        <a style="background-color: white; border-radius:30px;">Login</a>
+    </nav>
+    
+    <div id="div1">
+        <img src="notes2.jpg">
+        <br><br><br><br><br>
+        <h1 style="color: white; margin-left:200px;">My Notes</h1>
+        <br>
+        <input style="margin-left:170px;" type="text" id="title" placeholder="My Title"><br><br>
+        <textarea style="margin-left:170px;" type="" id="notes" placeholder="My Notes"></textarea><br><br>
+        <button style="margin-left:180px; " onclick="store()" id="Addbutton">Add a note</button>
+        <button onclick="savechanges()" id="save" style="visibility: hidden; background-color: blue; color: black; margin-left: 70px; width: 260px;">Save Changes</button>
+        <h4 id="demo" style="visibility: hidden;">Your note has been saved</h4>
+    </div>
+    
+    <h1 style="color: black; margin-left: 150px; margin-top: 150px;">Your Notes</h1><br>
+    <p id="default" style="font-size:20px ; margin-left: 150px;">You have no notes yet!!!!!!</p>
+    
+    <div id="adding" style="display: flex; flex-wrap: wrap; padding: 20px; margin: 0px; width: 100%;  " onclick="handleClick(this,event)">
+       
+    </div>
+
+</body>
+</html>
